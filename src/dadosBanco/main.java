@@ -15,7 +15,7 @@ public class main {
 		System.out.println(Cliente.clientes.get(0).nome);
 
 		
-				
+		//		
 		//criar array de cliente pra saber os clientes ja cadastrados
 		// checa numero de contas cadastradas
 		// criar vetor de contas pra cada clientel
