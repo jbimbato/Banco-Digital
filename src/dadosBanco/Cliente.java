@@ -23,11 +23,7 @@ public class Cliente {
 		String nome_cliente = scanNome.nextLine();
 		this.nome = nome_cliente;
 		
-		//Pergunta se quer criar conta
-		System.out.println("Digite o numero da conta desse cliente:");
-		Scanner scanConta = new Scanner(System.in);
-		String conta = scanConta.nextLine();
-		
+
 		//Adiciona cliente cadastrado ao vetor de clientes na ultima posição
 		//Usei arraylist pra ficar mais dinamico
 		Cliente.clientes.add(this);	
