@@ -1,33 +1,57 @@
 package dadosBanco;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Cliente {
 	String cpf;
 	String nome;
-	Conta conta;
+	ArrayList<Conta> contas = new ArrayList();
+	static ArrayList<Cliente> clientes = new ArrayList();
+	static int numeroClientes;
 
-	static public Cliente cadastraCliente() {
-	
-		Cliente cliente = new Cliente();
-			
+	public Cliente () {
+		
+		//Pede ao usuario os dados ao dar o new Cliente
 		System.out.println("Digite seu CPF:");
-		Scanner c = new Scanner(System.in);
-		String cpf_cliente = c.nextLine();
-		cliente.cpf = cpf_cliente;
+		Scanner scanCpf = new Scanner(System.in);
+		String cpf_cliente = scanCpf.nextLine();
+		this.cpf = cpf_cliente;
 		
 		System.out.println("Digite seu nome:");
-		Scanner n = new Scanner(System.in);
-		String nome_cliente = n.nextLine();
-		cliente.nome = nome_cliente;
+		Scanner scanNome = new Scanner(System.in);
+		String nome_cliente = scanNome.nextLine();
+		this.nome = nome_cliente;
 		
-		if(cliente.conta.numero != 0) {
-			return cliente;
-		} else {
-			cliente.conta = new Conta();
-			return cliente;
-		}
+		//Pergunta se quer criar conta
+		System.out.println("Digite o numero da conta desse cliente:");
+		Scanner scanConta = new Scanner(System.in);
+		String conta = scanConta.nextLine();
+		
+		//Adiciona cliente cadastrado ao vetor de clientes na ultima posição
+		//Usei arraylist pra ficar mais dinamico
+		Cliente.clientes.add(this);	
+		
+		//Add +1 ao numero de clientes
+		Cliente.numeroClientes++;
 		
 	}
+	
+//	static public Cliente cadastraCliente() {
+//	
+//		Cliente cliente = new Cliente();
+//			
+//		System.out.println("Digite seu CPF:");
+//		Scanner c = new Scanner(System.in);
+//		String cpf_cliente = c.nextLine();
+//		cliente.cpf = cpf_cliente;
+//		
+//		System.out.println("Digite seu nome:");
+//		Scanner n = new Scanner(System.in);
+//		String nome_cliente = n.nextLine();
+//		cliente.nome = nome_cliente;
+//		
+//		}
+		
 
 }
