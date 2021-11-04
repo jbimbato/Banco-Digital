@@ -3,7 +3,7 @@ package dadosBanco;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Conta {
+public class Conta extends Operator {
 	String numero;
 	double saldo = 0;
 	static ArrayList<Conta> todasContas = new ArrayList();
@@ -70,6 +70,8 @@ public class Conta {
 			}
 		}
 	}
+	
+
 
 
 }

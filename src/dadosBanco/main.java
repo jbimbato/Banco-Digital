@@ -10,9 +10,10 @@ public class main {
 	public static void main(String[] args) {
 	
 		String resposta = "1";
-		Cliente cliente1 = new Cliente();
-		cliente1.contas.get(0).deposito();
-		//Cliente.novaContaClienteCadastrado();
+		
+//		Cliente cliente1 = new Cliente();
+//		cliente1.contas.get(0).deposito();
+//		Cliente.novaContaClienteCadastrado();
 		
 		do {
 			System.out.println("Bem vindo ao Banco Banco. Já é cliente?\n\n"
@@ -129,17 +130,17 @@ public class main {
 			}
 		} while(!resposta.equals("0"));
 		
-		System.out.println(cliente1.cpf);
-		System.out.println(Cliente.numeroClientes);
-		System.out.println(Cliente.clientes.get(0).nome);
-		System.out.println(cliente1.contas.get(0).numero);
-
-		System.out.println(cliente1.contas.get(1).numero);
-
-		Cliente cliente2 = new Cliente();
-		System.out.println(cliente2.cpf);
-		System.out.println(Cliente.numeroClientes);
-		System.out.println(Cliente.clientes.get(1).nome);
+//		System.out.println(cliente1.cpf);
+//		System.out.println(Cliente.numeroClientes);
+//		System.out.println(Cliente.clientes.get(0).nome);
+//		System.out.println(cliente1.contas.get(0).numero);
+//
+//		System.out.println(cliente1.contas.get(1).numero);
+//
+//		Cliente cliente2 = new Cliente();
+//		System.out.println(cliente2.cpf);
+//		System.out.println(Cliente.numeroClientes);
+//		System.out.println(Cliente.clientes.get(1).nome);
 		
 	
 		//criar array de cliente pra saber os clientes ja cadastrados
